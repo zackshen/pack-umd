@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="//cdn.bootcss.com/require.js/2.1.22/require.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+  </body>
+  <script type="text/javascript">
+    require(["./mfactory"], function(mfactoryModule) {
+        var mfactory = mfactoryModule["mfactory"];
+        var m = mfactory("alpha");
+        console.log(m.getName());
+        console.log(mfactory("beta").getName());
+    });
+  </script>
+</html>

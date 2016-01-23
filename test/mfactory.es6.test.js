@@ -1,7 +1,7 @@
 import { mfactory } from '../src/mfactory'
 let expect = require('chai').expect
 
-describe('test mfactory', function() {
+describe('ES6 test mfactory', function() {
   it('call Alpha', function() {
     expect(mfactory('alpha').getName()).to.be.equal("alpha")
   })

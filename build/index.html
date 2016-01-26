@@ -9,7 +9,7 @@
   </body>
   <script type="text/javascript">
     require(["./mfactory"], function(mfactoryModule) {
-        var mfactory = mfactoryModule["mfactory"];
+        var mfactory = mfactoryModule["default"];
         var m = mfactory("alpha");
         document.write("<h1>" + m.getName() + "</h1>");
         document.write("<h2>" + mfactory("beta").getName() + "</h2>");

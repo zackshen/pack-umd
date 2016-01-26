@@ -1,4 +1,4 @@
-import { mfactory } from '../src/mfactory'
+import mfactory from '../src/mfactory'
 let chai = require('chai')
 let spies = require('chai-spies')
 let expect = chai.expect

@@ -57,9 +57,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+	    value: true
 	});
-	exports.mfactory = mfactory;
+	exports.default = mfactory;
 
 	var _alpha = __webpack_require__(1);
 
@@ -70,19 +70,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function mfactory(name) {
-	  var m = undefined;
-	  switch (name) {
-	    case 'alpha':
-	      m = new _alpha.alpha();
-	      break;
-	    case 'beta':
-	      m = new _beta2.default();
-	      break;
-	  }
-	  if (!m) {
-	    throw new Error('module does not exists.');
-	  }
-	  return m;
+	    var m = undefined;
+	    switch (name) {
+	        case 'alpha':
+	            m = new _alpha.alpha();
+	            break;
+	        case 'beta':
+	            m = new _beta2.default();
+	            break;
+	    }
+	    if (!m) {
+	        throw new Error('module does not exists.');
+	    }
+	    return m;
 	}
 
 /***/ },
@@ -94,26 +94,26 @@ return /******/ (function(modules) { // webpackBootstrap
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+	    value: true
 	});
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	var alpha = function () {
-	  function alpha() {
-	    _classCallCheck(this, alpha);
+	    function alpha() {
+	        _classCallCheck(this, alpha);
 
-	    this.name = 'alpha';
-	  }
-
-	  _createClass(alpha, [{
-	    key: 'getName',
-	    value: function getName() {
-	      return this.name;
+	        this.name = 'alpha';
 	    }
-	  }]);
 
-	  return alpha;
+	    _createClass(alpha, [{
+	        key: 'getName',
+	        value: function getName() {
+	            return this.name;
+	        }
+	    }]);
+
+	    return alpha;
 	}();
 
 	exports.alpha = alpha;
@@ -127,7 +127,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+	    value: true
 	});
 
 	var _eventemitter = __webpack_require__(3);
@@ -143,31 +143,31 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var Alpha = function (_EventEmitter) {
-	  _inherits(Alpha, _EventEmitter);
+	    _inherits(Alpha, _EventEmitter);
 
-	  function Alpha() {
-	    _classCallCheck(this, Alpha);
+	    function Alpha() {
+	        _classCallCheck(this, Alpha);
 
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Alpha).call(this));
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Alpha).call(this));
 
-	    _this.name = 'beta';
-	    return _this;
-	  }
-
-	  _createClass(Alpha, [{
-	    key: 'getName',
-	    value: function getName() {
-	      var name = this.name;
-	      return 'i\'m ' + name;
+	        _this.name = 'beta';
+	        return _this;
 	    }
-	  }, {
-	    key: 'print',
-	    value: function print() {
-	      console.log('getName');
-	    }
-	  }]);
 
-	  return Alpha;
+	    _createClass(Alpha, [{
+	        key: 'getName',
+	        value: function getName() {
+	            var name = this.name;
+	            return 'i\'m ' + name;
+	        }
+	    }, {
+	        key: 'print',
+	        value: function print() {
+	            console.log('getName');
+	        }
+	    }]);
+
+	    return Alpha;
 	}(_eventemitter2.default);
 
 	exports.default = Alpha;

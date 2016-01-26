@@ -1,7 +1,7 @@
 import {alpha as Alpha} from './alpha'
 import Beta from './beta'
 
-export function mfactory (name) {
+export default function mfactory (name) {
     let m
     switch (name) {
     case 'alpha':

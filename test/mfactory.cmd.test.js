@@ -1,4 +1,4 @@
-var mfactory = require('../src/mfactory')['mfactory']
+var mfactory = require('../src/mfactory')['default']
 var expect = require('chai').expect
 
 describe('CMD: test mfactory', function () {

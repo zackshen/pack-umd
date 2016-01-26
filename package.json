@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "how to pack a umd library written by es6 with webpack",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "eventemitter3": "^1.1.1"
+  },
   "devDependencies": {
     "babel-core": "^6.4.5",
     "babel-eslint": "^4.1.6",
@@ -14,8 +16,10 @@
     "babel-preset-stage-2": "^6.3.13",
     "babel-runtime": "^6.3.19",
     "chai": "^3.4.1",
+    "chai-spies": "^0.7.1",
     "eslint": "^1.10.3",
     "eslint-loader": "^1.2.0",
+    "eslint-plugin-mocha": "^1.1.0",
     "html-webpack-plugin": "^2.7.1"
   },
   "scripts": {

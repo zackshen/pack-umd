@@ -4,6 +4,8 @@
     "node": true
   },
 
+  "plugins": ["mocha"],
+
   "ecmaFeatures": {
     "arrowFunctions": true,
     "destructuring": true,
@@ -176,6 +178,7 @@
     "vars-on-top": 0,
     "wrap-iife": [2, "any"],
     "wrap-regex": 0,
-    "yoda": [2, "never"]
+    "yoda": [2, "never"],
+    "mocha/no-exclusive-tests": 2
   }
 }

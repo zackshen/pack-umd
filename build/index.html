@@ -13,6 +13,14 @@
         var m = mfactory("alpha");
         document.write("<h1>" + m.getName() + "</h1>");
         document.write("<h2>" + mfactory("beta").getName() + "</h2>");
+
+        var b = mfactory("beta");
+        b.on('event', function(e) {
+          document.write("<h1>beta recieved an event, " + e + "</h1>");
+        });
+
+        b.emit("event", "1");
+        b.emit("event", "2");
     });
   </script>
 </html>
